@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Activity dan Intent</string>
+    <string name="jurusan">jurusan</string>
+
+    <string-array name="list_jurusan">
+    <item>Akutansi</item>
+    <item>Teknologi Informasi</item>
+    <item>Teknik Elektro</item>
+    <item>Teknik Sipil</item>
+    </string-array>
+</resources>
