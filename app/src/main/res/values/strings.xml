@@ -1,12 +1,3 @@
 <resources>
-    <string name="app_name">Activity dan Intent</string>
-    <string name="jurusan">jurusan</string>
-    <string name="data_diterima">data diterima</string>
-
-    <string-array name="list_jurusan">
-    <item>Akutansi</item>
-    <item>Teknologi Informasi</item>
-    <item>Teknik Elektro</item>
-    <item>Teknik Sipil</item>
-    </string-array>
+    <string name="app_name">Form Active dan Intent</string>
 </resources>
