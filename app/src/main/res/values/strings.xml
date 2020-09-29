@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Activity dan Intent</string>
     <string name="jurusan">jurusan</string>
+    <string name="data_diterima">data diterima</string>
 
     <string-array name="list_jurusan">
     <item>Akutansi</item>
