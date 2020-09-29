@@ -1,58 +1,63 @@
-package com.example.activitydanintent
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.app.DatePickerDialog;
-import android.support.annotation.Nullable;
-import android.widget.DatePicker;
+<LinearLayout
+        android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-import androidx.annotation.Nullable;
+<EditText
+            android:id="@+id/edtNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Mahasiswa"/>
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Locale;
+<EditText
+            android:id="@+id/edtNim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Induk Mahasiswa"/>
 
-public class MainActivity extends AppCompatActivity {
-    Button buttonsimpan;
-    EditText txtNim, txtNama;
-    DatePickerDialog txtTanggalLahir;
-    RadioGroup x;
-    Spinner list_jurusan;
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        // inisialisasi
-        buttonsimpan = (Button) findViewById(R.id.buttonsimpan);
-        txtNim = (EditText) findViewById(R.id.txtNim);
-        txtNama = (EditText) findViewById(R.id.txtNama);
-        txtTanggalLahir = (EditText) findViewById(R.id.txtNama);
-        rgjk = (RadioGroup) findViewById(R.id.jk);
-        etanggallahir = (EditText) findViewById(R.id.tanggallahir);
+<EditText
+            android:id="@+id/edtTanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="Tanggal Lahir"/>
+
+<RadioGroup
+            android:id="@+id/rg_jeniskelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
 
-        buttonsimpan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String inputnim = String.valueOf(txtNim.getText().toString());
-                String inputnama = String.valueOf(txtNama.getText().toString());
-                String inputtanggallahir = String.valueOf(txtTanggalLahir.getText().toString());
-                int gender = rgjk.getCheckedRadioButtonId();
-                RadioButton jk = (RadioButton) findViewById(gender);
-                String inputjk = String.valueOf(jk.getText().toString());
-                hasil.setText(“\n” + “NIM\t\t\t\t\t\t\t\t\t\t\t: “ + inputnim + “\n” +
-                “Nama\t\t\t\t\t\t\t\t\t\t: “ + inputnama + “\n” +
-                “Jenis Kelamin\t\t: “ + inputjk + “\n” +
-                “Jenis Kelamin\t\t: “ + inputtempatlahir + “\n” +
-                “Tanggal Lahir\t\t\t: “ + inputtanggallahir + “\n”);
-            }
-        });
-    }
-}
+<RadioButton
+                android:id="@+id/rb_laki"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Laki Laki" />
+
+<RadioButton
+                android:id="@+id/rb_perempuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perempuan" />
+</RadioGroup>
+
+<Spinner
+            android:id="@+id/spinnerJurusan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+<Button
+            android:id="@+id/Simpan"
+                    android:text="SIMPAN DATA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+</LinearLayout>
+</RelativeLayout>
