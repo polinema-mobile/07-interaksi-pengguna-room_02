@@ -11,4 +11,9 @@
         <item>Administrasi Niaga</item>
         <item>Teknik Kimia</item>
     </string-array>
+    <item name="tanggalLahirValue" type="id" />
+    <item name="jeniskelaminValue" type="id" />
+    <item name="jurusanValue" type="id" />
+    <item name="spinner" type="id" />
+    <item name="edtRadio" type="id" />
 </resources>
