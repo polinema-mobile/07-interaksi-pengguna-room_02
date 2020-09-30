@@ -6,9 +6,9 @@ Room 02 :
 - Dimahyanti Dwi Lestariningsih (1841720132)
 - Nurus Laily Aprilia           (1841720049)
 
-Tampilan Awal :
+## Tampilan Awal :
 ![Hasil](1.jpg)
 
-Tampilan Intent
+## Tampilan Intent
 ![Hasil](2.jpg)
 ![Hasil](3.jpg)
