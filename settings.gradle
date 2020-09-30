@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Form Active dan Intent"
+rootProject.name = "ActivityIntent"

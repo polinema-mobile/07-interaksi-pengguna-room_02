@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Form Active dan Intent</string>
+    <string name="app_name">ActivityIntent</string>
+
+    <string-array name="android_dropdown_arrays">
+        <item>Teknologi Informasi</item>
+        <item>Teknik Sipil</item>
+        <item>Teknik Mesin</item>
+        <item>Teknik Elektro</item>
+        <item>Teknik Listrik</item>
+        <item>Akuntansi</item>
+        <item>Administrasi Niaga</item>
+        <item>Teknik Kimia</item>
+    </string-array>
+    <item name="tanggalLahirValue" type="id" />
+    <item name="jeniskelaminValue" type="id" />
+    <item name="jurusanValue" type="id" />
+    <item name="spinner" type="id" />
+    <item name="edtRadio" type="id" />
 </resources>
