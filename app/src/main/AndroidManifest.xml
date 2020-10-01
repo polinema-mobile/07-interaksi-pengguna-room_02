@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityKedua"></activity>
+        <activity android:name=".ActivityKeduaParcelable"></activity>
     </application>
 
 </manifest>
